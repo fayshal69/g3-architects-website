@@ -119,10 +119,162 @@ main {
     font-weight: 700;
 }
 
-.teams-content-container .features {
+.teams-content-container .features-span {
     color: #FF900E;
     font-weight: 700;
 }
+
+.facts h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.facts p {
+    color: #727272;
+    line-height: 26px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.facts-card-container .card img {
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card h2 {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 5 px;
+}
+
+.facts-card-container .card p {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sponspors {
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.sponspors h3 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sponspors p {
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+.sponspors-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features {
+    display: flex;
+    gap: 100px;
+    margin: 130px 0;
+}
+
+.feature-content h3 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-left: 26px;
+    border-left: 5px solid #FF900E;
+}
+
+.feature-content p {
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.feature-content .card h4 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-content .card p {
+    color: #727272;
+    line-height: 26px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.feature-img .ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    padding: 40px;
+    width: 342px;
+    position: relative;
+    bottom: 100px;
+}
+
+.feature-img .ten-years-badge h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.feature-img .ten-years-badge p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+footer {
+    padding: 40px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    max-width: 1440px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+footer p {
+    color: #424242;
+    font-size: 20px;
+}
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
     header {
@@ -151,6 +303,40 @@ main {
     .teams-content-container {
         padding: 0 20px;
     }
+
+    .facts {
+    padding: 0 20px;
+    }
+
+    .facts-card-container {
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 0 30px;
+    }
+
+    .sponspors {
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .sponspors-img-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        max-width: 300px;
+        position: static;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -171,5 +357,34 @@ main {
 
     .teams-content-container {
         padding: 0 30px;
+    }
+
+    .facts {
+        padding: 0 20px;
+    }
+
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 50px;
+        margin: 50px 0;
+    }
+
+    .sponspors {
+        padding: 0 30px;
+        margin-bottom: 70px;
+    }
+
+    .sponspors-img-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-img img {
+        margin-left: 50px;
     }
 }
